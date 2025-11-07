@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Forma de Pagamento</title>
+</head>
+<body>
+    <h2>Simulador de Pagamento</h2>
+    <form method="post" action="processa.php">
+        <label>Valor da Compra (R$):</label>
+        <input type="number" step="0.01" name="valor" required><br><br>
+
+        <label>Forma de Pagamento:</label><br>
+        <input type="radio" name="forma" value="avista" required> À vista (10% de desconto)<br>
+        <input type="radio" name="forma" value="parcelado"> Parcelado em 3x sem juros<br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
